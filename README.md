@@ -1,0 +1,1 @@
+* Zellij Meta plugin
