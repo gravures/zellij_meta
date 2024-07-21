@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+conf_dir=${ZELLIJ_CONFIG_DIR:-"$HOME/.config/zellij"}
+
+if cargo build --release; then
+    cp -i target/wasm32-wasi/release/zellij_meta.wasm "$conf_dir"/plugins
+fi
